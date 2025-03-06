@@ -85,7 +85,7 @@
             height: 15px;
             background: red;
             transform: rotate(-45deg);
-            animation: float 6s infinite ease-in-out;
+            animation: floatUp 6s infinite ease-in-out;
         }
         
         .heart:before,
@@ -101,9 +101,9 @@
         .heart:before { top: -7px; left: 0; }
         .heart:after { left: 7px; top: 0; }
         
-        @keyframes float {
-            0% { transform: translateY(0) rotate(-45deg); opacity: 1; }
-            100% { transform: translateY(-100vh) rotate(-45deg); opacity: 0; }
+        @keyframes floatUp {
+            0% { transform: translateY(100vh) rotate(-45deg); opacity: 1; }
+            100% { transform: translateY(-100px) rotate(-45deg); opacity: 0; }
         }
 
         @media (max-width: 480px) {
@@ -116,7 +116,7 @@
 <body>
     <div class="hearts"></div>
     <div class="container">
-        <h1>С 8 Марта!</h1>
+        <h1>С 8 Наурыз құтты болсын!</h1>
         <p>
             Құрметті қыздар!
             8 наурыз — Халықаралық әйелдер күні құтты болсын! Сіздерге шексіз қуаныш, шаттық пен әдемі сәттер тілейміз. Осы ерекше күнде біз сіздерді бірге киноға шақырамыз!
@@ -130,7 +130,7 @@
         </p>
         <img class="flowers" src="https://images.unsplash.com/photo-1460039230329-eb070fc6c77c?q=80&w=400" alt="Цветы">
         <br>
-        <a class="btn" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">Поздравляем!</a>
+        <a class="btn" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">Құттықтаймыз!</a>
     </div>
     <script>
         function createHeart() {
